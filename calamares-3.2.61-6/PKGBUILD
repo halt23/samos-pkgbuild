@@ -26,7 +26,7 @@ source+=(#"$pkgname-$pkgver-$pkgrel.tar.gz::$url/-/archive/v$pkgver/calamares-v$
          "$pkgname-$pkgver-$pkgrel.tar.gz::$url/-/archive/$_commit/$pkgname-$_commit.tar.gz"
         )
 sha256sums=('39c38180b6c7d6088984c300e3fdf125b571525d1d252b59a52388e1780f98e4'
-            '993c4d3babd7ead9a20fb43c338d3223f1531c55a2bdb0bf2dd899db22433214'
+            '00fb76f17a49f3a4763f40dfaf42a972c558ebb728509f353a4a967e20689116'
             '081415e5d6a44691cb984ccaea276e113ec8a058ce12dd3b774640ad44aeacd8')
 
 prepare() {
@@ -93,4 +93,3 @@ package() {
 	# fix branding install
 	cp -av "../src/branding/manjaro" "$pkgdir/usr/share/calamares/branding/"
 }
- 
