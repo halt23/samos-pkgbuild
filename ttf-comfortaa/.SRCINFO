@@ -1,0 +1,12 @@
+pkgbase = ttf-comfortaa
+	pkgdesc = Rounded geometric sans-serif typeface from Google by Johan Aakerlund
+	pkgver = 3.105
+	pkgrel = 1
+	url = https://fonts.google.com/specimen/Comfortaa
+	arch = any
+	license = custom:OFL
+	conflicts = ttf-google-fonts-git
+	source = ttf-comfortaa-3.105.zip::https://fonts.google.com/download?family=Comfortaa
+	sha256sums = SKIP
+
+pkgname = ttf-comfortaa
