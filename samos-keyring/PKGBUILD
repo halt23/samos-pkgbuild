@@ -1,22 +1,23 @@
 # Maintainers: Portergos Linux <portergoslinux@gmail.com>, EndeavourOS <info@endeavouros.com>
 
 pkgname=samos-keyring
-pkgver=1
+pkgver=2.1
 pkgrel=1
-pkgdesc="Sam os keyring"
+pkgdesc="The Sam os keyring"
 arch=('any')
-url="https://github.com/halt23/samos"
+url="https://github.com/halt23"
 license=('GPL')
 install="${pkgname}.install"
 source=('Makefile'
         'samos.gpg'
-	#'samos-revoked'
-	#'samos-trusted'
-	)
-validpgpkeys=("7A2D80510575983241B4CC9DEF7D0EDF690159F3")
+	'samos-revoked'
+	'samos-trusted')
+validpgpkeys=('7A2D80510575983241B4CC9DEF7D0EDF690159F3')
+md5sums=('e2d8913fe8c1bf73aae7bbcc7519d0b7'
+         'c6684cfdb500c96d6028156c0f1e6053'
+         'd41d8cd98f00b204e9800998ecf8427e'
+         '7384f2267e02674e9f725c3fb75bd642')
 package() {
 	cd "${srcdir}"
 	make PREFIX=/usr DESTDIR=${pkgdir} install
 }
-sha256sums=('ee67db9b85456fa033cd4f9a6e7dee377ad3c0c0e7f02785e6039bca475ae128'
-            'c3c2d7de2c044892a52c5d2cad9a492a8a9fa65c872a8e4a2c11b21948a56a50')
